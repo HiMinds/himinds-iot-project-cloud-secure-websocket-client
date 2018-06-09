@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 
 
-// in order to handle self-signed certificates we need to turn of the validation
+// in order to handle self-signed certificates we need to turn off the validation
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 const ws = new WebSocket('wss://localhost:8080');
